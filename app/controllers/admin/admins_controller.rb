@@ -23,7 +23,7 @@ class Admin::AdminsController < AdminController
     end
 
     def update
-         params = form_params.to_h
+        params = form_params.to_h
         params = params.except!(:password, :password_confirmation) if params[:password].blank?
 
         if @admin.update(params)
