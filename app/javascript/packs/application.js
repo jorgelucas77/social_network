@@ -16,3 +16,6 @@ ActiveStorage.start()
 //= require jquery
 //= require jquery_ujs
 import "./like_toggle"
+
+import $ from 'jquery';
+global.$ = jQuery;
